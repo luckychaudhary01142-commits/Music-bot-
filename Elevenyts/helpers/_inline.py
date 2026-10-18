@@ -182,7 +182,7 @@ class Inline:
             ],
             [
                 self.ikb(text="  " + lang["support"], url=config.SUPPORT_CHAT),
-                self.ikb(text=" " + lang["channel"], url=config.SUPPORT_CHANNEL),
+                self.ikb(text=" " + lang["channel"], url=config.SUPPORT_CHANNEL, icon_custom_emoji_id="5353060840448727534"),
             ],
             [   self.ikb(text="owner",          url="https://t.me/light_speedi",          style=ButtonStyle.DANGER),
             ], 
