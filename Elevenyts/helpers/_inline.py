@@ -176,7 +176,6 @@ class Inline:
                     text="  " + lang["add_me"],
                     url=f"https://t.me/{app.username}?startgroup=true",
                     style=ButtonStyle.PRIMARY,
-                    style=ButtonStyle.DANGER,
                     icon_custom_emoji_id="5285231474210002234",
                 )
             ],
