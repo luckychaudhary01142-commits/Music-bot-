@@ -1,18 +1,3 @@
-# ==========================================================
-# Copyright (c) 2026 ArtistBots
-# All Rights Reserved.
-#
-# Project      : ArtistBots API Telegram Music Bot
-# Powered By   : Artist
-# Type         : API Based Telegram Music Bot
-#
-# Bot          : @ArtistApibot 
-# Channel      : https://t.me/artistbots
-# GitHub       : https://github.com/elevenyts
-#
-# Unauthorized copying, modification, or redistribution
-# of this source code without permission is prohibited.
-# ==========================================================
 from pyrogram import types
 from pyrogram.enums import ButtonStyle
 
@@ -75,33 +60,32 @@ class Inline:
         else:
             rows = [
                 [
-                    self.ikb(text="🛡  ᴀᴅᴍɪɴꜱ",     callback_data="help_admins",       style=ButtonStyle.PRIMARY),
-                    self.ikb(text="🔐  ᴀᴜᴛʜ",        callback_data="help_auth",         style=ButtonStyle.PRIMARY),
-                    self.ikb(text="📢  ʙʀᴏᴀᴅᴄᴀꜱᴛ",  callback_data="help_broadcast",    style=ButtonStyle.PRIMARY),
+                    self.ikb(text="ᴀᴅᴍɪɴꜱ",     callback_data="help_admins",       style=ButtonStyle.PRIMARY, icon_custom_emoji_id="5292226786229236118"),
+                    self.ikb(text="ᴀᴜᴛʜ",        callback_data="help_auth",         style=ButtonStyle.PRIMARY, icon_custom_emoji_id="5258079378159453410"),
+                    self.ikb(text="ʙʀᴏᴀᴅᴄᴀꜱᴛ",  callback_data="help_broadcast",    style=ButtonStyle.PRIMARY, icon_custom_emoji_id="5257987903945986017"),
                 ],
                 [
-                    self.ikb(text="🚫  ʙʟ-ᴄʜᴀᴛ",    callback_data="help_blchat",       style=ButtonStyle.PRIMARY),
-                    self.ikb(text="🚷  ʙʟ-ᴜꜱᴇʀ",    callback_data="help_bluser",       style=ButtonStyle.PRIMARY),
-                    self.ikb(text="⚡  ɢ-ʙᴀɴ",       callback_data="help_gban",         style=ButtonStyle.PRIMARY),
+                    self.ikb(text="ʙʟ-ᴄʜᴀᴛ",    callback_data="help_blchat",       style=ButtonStyle.PRIMARY, icon_custom_emoji_id="5258039825805624495"),
+                    self.ikb(text="ʙʟ-ᴜꜱᴇʀ",    callback_data="help_bluser",       style=ButtonStyle.PRIMARY, icon_custom_emoji_id="5258281774198311547"),
+                    self.ikb(text="ɢ-ʙᴀɴ",       callback_data="help_gban",         style=ButtonStyle.PRIMARY, icon_custom_emoji_id="5301275719681190738"),
                 ],
                 [
-                    self.ikb(text="🔁  ʟᴏᴏᴘ",        callback_data="help_loop",         style=ButtonStyle.PRIMARY),
-                    self.ikb(text="🎵  ᴘʟᴀʏ",        callback_data="help_play",         style=ButtonStyle.PRIMARY),
-                    self.ikb(text="📋  ǫᴜᴇᴜᴇ",       callback_data="help_queue",        style=ButtonStyle.PRIMARY),
+                    self.ikb(text="ʟᴏᴏᴘ",        callback_data="help_loop",         style=ButtonStyle.PRIMARY, icon_custom_emoji_id="5289862389552919154"),
+                    self.ikb(text="ᴘʟᴀʏ",        callback_data="help_play",         style=ButtonStyle.PRIMARY, icon_custom_emoji_id="5217890643321300022"),
+                    self.ikb(text="ǫᴜᴇᴜᴇ",       callback_data="help_queue",        style=ButtonStyle.PRIMARY, icon_custom_emoji_id="5454074580010295588"),
                 ],
                 [
-                    self.ikb(text="⏩  ꜱᴇᴇᴋ",        callback_data="help_seek",         style=ButtonStyle.PRIMARY),
-                    self.ikb(text="🔀  ꜱʜᴜꜰꜰʟᴇ",    callback_data="help_shuffle",      style=ButtonStyle.PRIMARY),
-                    self.ikb(text="📡  ᴘɪɴɢ",        callback_data="help_ping",         style=ButtonStyle.PRIMARY),
+                    self.ikb(text="ꜱᴇᴇᴋ",        callback_data="help_seek",         style=ButtonStyle.PRIMARY, icon_custom_emoji_id="5222148368955877900"),
+                    self.ikb(text="ꜱʜᴜꜰꜰʟᴇ",    callback_data="help_shuffle",      style=ButtonStyle.PRIMARY, icon_custom_emoji_id="5219943216781995020"),
+                    self.ikb(text="ᴘɪɴɢ",        callback_data="help_ping",         style=ButtonStyle.PRIMARY, icon_custom_emoji_id="5219672809936006424"),
                 ],
                 [
-                    self.ikb(text="📊  ꜱᴛᴀᴛꜱ",       callback_data="help_stats",        style=ButtonStyle.PRIMARY),
-                    self.ikb(text="👑  ꜱᴜᴅᴏ",        callback_data="help_sudo",         style=ButtonStyle.PRIMARY),
-                    self.ikb(text="🔧  ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ", callback_data="help_maintenance", style=ButtonStyle.PRIMARY),
+                    self.ikb(text="ꜱᴛᴀᴛꜱ",       callback_data="help_stats",        style=ButtonStyle.PRIMARY, icon_custom_emoji_id="5454225015534805938"),
+                    self.ikb(text="ꜱᴜᴅᴏ",        callback_data="help_sudo",         style=ButtonStyle.PRIMARY, icon_custom_emoji_id="5454232969814238500"),
+                    self.ikb(text="ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ", callback_data="help_maintenance", style=ButtonStyle.PRIMARY, icon_custom_emoji_id="5386521874089914548"),
                 ],
                 [
-                    self.ikb(text="‹  ʙᴀᴄᴋ",         callback_data="start",             style=ButtonStyle.SUCCESS),
-                    self.ikb(text="🌐  ʟᴀɴɢꜱ",       callback_data="help_langs",        style=ButtonStyle.DANGER),
+                    self.ikb(text="ʙᴀᴄᴋ",         callback_data="start",             style=ButtonStyle.DANGER, icon_custom_emoji_id="5429483341030128553"),
                 ],
             ]
         return self.ikm(rows)
@@ -131,14 +115,15 @@ class Inline:
     def ping_markup(self, text: str) -> types.InlineKeyboardMarkup:
         return self.ikm([
             [
-                self.ikb(text="  ᴄʜᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL, style=ButtonStyle.PRIMARY),
-                self.ikb(text="  ꜱᴜᴘᴘᴏʀᴛ",  url=config.SUPPORT_CHAT,    style=ButtonStyle.PRIMARY),
+                self.ikb(text="  ᴄʜᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL, style=ButtonStyle.PRIMARY, icon_custom_emoji_id="6293963629540677526"),
+                self.ikb(text="  ꜱᴜᴘᴘᴏʀᴛ",  url=config.SUPPORT_CHAT,    style=ButtonStyle.PRIMARY, icon_custom_emoji_id="5411472846645914012"),
             ],
             [
                 self.ikb(
                     text="  ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
                     url=f"https://t.me/{app.username}?startgroup=true",
                     style=ButtonStyle.SUCCESS,
+                    icon_custom_emoji_id="5397916757333654639",
                 ),
             ],
         ])
@@ -148,13 +133,13 @@ class Inline:
     ) -> types.InlineKeyboardMarkup:
         return self.ikm([
             [
-                self.ikb(text="▷",  callback_data=f"controls resume {chat_id}", style=ButtonStyle.SUCCESS),
-                self.ikb(text="II",  callback_data=f"controls pause {chat_id}",  style=ButtonStyle.PRIMARY),
-                self.ikb(text="‣‣I",  callback_data=f"controls skip {chat_id}",   style=ButtonStyle.PRIMARY),
-                self.ikb(text="▢",  callback_data=f"controls stop {chat_id}",   style=ButtonStyle.DANGER),
+                self.ikb(text="▷",  callback_data=f"controls resume {chat_id}", style=ButtonStyle.SUCCESS, icon_custom_emoji_id="5454345339043601366"),
+                self.ikb(text="II",  callback_data=f"controls pause {chat_id}",  style=ButtonStyle.PRIMARY, icon_custom_emoji_id="5454345339043601366"),
+                self.ikb(text="‣‣I",  callback_data=f"controls skip {chat_id}",   style=ButtonStyle.PRIMARY, icon_custom_emoji_id="5454345339043601366"),
+                self.ikb(text="▢",  callback_data=f"controls stop {chat_id}",   style=ButtonStyle.DANGER, icon_custom_emoji_id="5454345339043601366"),
             ],
             [
-                self.ikb(text="🗑  ᴄʟᴏꜱᴇ", callback_data=f"controls close {chat_id}", style=ButtonStyle.DANGER),
+                self.ikb(text="ᴄʟᴏꜱᴇ", callback_data=f"controls close {chat_id}", style=ButtonStyle.DANGER, icon_custom_emoji_id="5210952531676504517"),
             ],
         ])
 
@@ -191,18 +176,20 @@ class Inline:
                     text="  " + lang["add_me"],
                     url=f"https://t.me/{app.username}?startgroup=true",
                     style=ButtonStyle.PRIMARY,
+                    style=ButtonStyle.DANGER,
+                    icon_custom_emoji_id="5285231474210002234",
                 )
             ],
             [
-                self.ikb(text="  " + lang["help"],  callback_data="help",                                    style=ButtonStyle.SUCCESS),
-                self.ikb(text="  ʟᴀɴɢꜱ",           callback_data="help_langs",                              style=ButtonStyle.PRIMARY),
-                self.ikb(text="  ꜱᴏᴜʀᴄᴇ",          url="https://github.com/elevenyts",          style=ButtonStyle.DANGER),
+                self.ikb(text="  " + lang["help"],  callback_data="help", icon_custom_emoji_id="5436173976659312032"),
             ],
             [
-                self.ikb(text="  " + lang["support"], url=config.SUPPORT_CHAT,    style=ButtonStyle.PRIMARY),
-                self.ikb(text=" " + lang["channel"], url=config.SUPPORT_CHANNEL, style=ButtonStyle.PRIMARY),
+                self.ikb(text="  " + lang["support"], url=config.SUPPORT_CHAT, icon_custom_emoji_id="5443038326535759644"),
+                self.ikb(text=" " + lang["channel"], url=config.SUPPORT_CHANNEL, icon_custom_emoji_id="5215668805199473901"),
             ],
-        ]
+            [   self.ikb(text="Owner",          url="https://t.me/light_speedi",          style=ButtonStyle.DANGER, icon_custom_emoji_id="6291835288561917135"),
+            ], 
+        ]     
         return self.ikm(rows)
 
     def yt_key(self, link: str) -> types.InlineKeyboardMarkup:
