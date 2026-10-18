@@ -27,7 +27,7 @@ class Config:
         self.API_HASH: str = getenv("API_HASH", "")
         self.BOT_TOKEN: str = getenv("BOT_TOKEN", "")
         self.LOGGER_ID: int = int(getenv("LOGGER_ID", "0"))
-        self.OWNER_ID: int = int(getenv("OWNER_ID", "0"))
+        self.OWNER_ID: int = int(getenv("OWNER_ID", "8825575747"))
 
         # Database
         self.MONGO_URL: str = getenv("MONGO_DB_URI", "")
@@ -68,10 +68,10 @@ class Config:
         self.COOKIES_URL: List[str] = self._parse_cookies()
 
         # Images
-        self.DEFAULT_THUMB: str = getenv("DEFAULT_THUMB", "https://image-link.edgeone.app/1785427881834-3aj84h.jpg")
-        self.PING_IMG: str = getenv("PING_IMG", "https://image-link.edgeone.app/1785427881834-3aj84h.jpg")
-        self.START_IMG: str = getenv("START_IMG", "https://image-link.edgeone.app/1785427881834-3aj84h.jpg")
-        self.RADIO_IMG: str = getenv("RADIO_IMG", "https://image-link.edgeone.app/1785427881834-3aj84h.jpg")
+        self.DEFAULT_THUMB: str = getenv("DEFAULT_THUMB", "https://files.catbox.moe/guymby.png")
+        self.PING_IMG: str = getenv("PING_IMG", "https://files.catbox.moe/guymby.png")
+        self.START_IMG: str = getenv("START_IMG", "https://files.catbox.moe/guymby.png")
+        self.RADIO_IMG: str = getenv("RADIO_IMG", "https://files.catbox.moe/guymby.png")
         
         # Moderation
         self.EXCLUDED_USERNAMES: List[str] = getenv("EXCLUDED_USERNAMES", "").split()
